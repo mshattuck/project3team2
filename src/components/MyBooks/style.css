@@ -1,0 +1,89 @@
+/* My Books */
+
+.my-books {
+    padding: 2rem 1.5rem 1rem 1rem;
+    border-radius: .5rem;
+    margin: 0 0 1rem 0;
+    background-color: #D1DFE8;
+    height: 200px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.my-books-title {
+    text-align: left;
+    z-index: 1;
+}
+
+.new-book-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.book-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem 1rem 1rem;
+    transition: transform .2s;
+}
+
+.book-item:hover {
+    transform: scale(1.03);
+}
+
+.book-item-text {
+    background-color: white;
+    height: 4rem;
+    border-radius: .5rem 0 0 .5rem;
+    padding: .5rem .5rem .5rem 1rem;
+    color: #2A3950;
+}
+
+.book-item-button{
+    height: 4rem;
+    border-style: none;
+    background-color: #355C7D;
+    border-radius: 0 2rem 2rem 0;
+    color: #e8e8e8;
+}
+
+/* Sroll bar */
+
+  /* width */
+  .my-books::-webkit-scrollbar {
+    width: .75rem;
+  }
+  
+  /* Track */
+  .my-books::-webkit-scrollbar-track {
+    background: #355C7D; 
+    border-radius: 0 .5rem .5rem 0;
+  }
+   
+  /* Handle */
+  .my-books::-webkit-scrollbar-thumb {
+    background: #97AFBD;
+    border-radius: 0 .5rem .5rem 0;
+  }
+  
+  /* Handle on hover */
+  .my-books::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+
+@media screen and (min-width: 400px) {
+
+    /* My Books */
+
+    .my-books {
+        min-height: 350px;
+        margin: 0 1rem 1rem .5rem;
+    }
+
+    .my-books-text {
+        padding: 2rem 0 1rem 0;
+    }
+}

@@ -1,0 +1,37 @@
+/* Book Page Title Element */
+
+.book {
+    background-color: #355C7D;
+    color: #e8e8e8;
+    padding: 1rem;
+    border-radius: .5rem;
+    margin: 2rem 1rem 1rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.book-info {
+    text-align: left;
+}
+
+.book-image {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.book-name {
+    padding-bottom: 1rem;
+}
+
+.book-text {
+    padding: 0rem;
+    margin: 0 0 .25rem 0;
+}
+
+/* media */
+
+@media screen and (min-width: 400px) {
+        
+}

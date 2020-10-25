@@ -1,0 +1,12 @@
+/* header area */
+
+#corner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+}
+
+#logo {
+    max-width: 300px;
+}

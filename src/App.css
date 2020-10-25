@@ -1,42 +1,94 @@
-.App {
-  text-align: center;
+/* elements */
+
+body {
+  font-family: 'Josefin Slab', serif;
+  font-weight: 600;
+  color: #2A3950;
+  margin: 0;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+header {
+  background-color: #D1DFE8;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+main{
+  padding: 1rem;
 }
 
-.App-title {
-  font-size: 1.5em;
+h1 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  text-transform: uppercase;
+  letter-spacing: .125rem;
 }
 
-.App-intro {
-  font-size: large;
+h2 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
 }
 
-.navbar {
- 
-  margin-top: auto;
-  
-}
-#top-filler {
-  margin-bottom: auto;
-}
-
-#nav-container {
-  align-items: flex-end;
+h3 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+h4 {
+  font-weight: 400;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
 }
 
+h5 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-size: 15px;
+  line-height: 1;
+  margin-top: 5px;
+}
+
+.title {
+  margin: 1rem 0 .5rem 1rem;
+}
+
+/* over-writing bootstrap */
+
+.col, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11 {
+  padding: 0px;
+}
+
+/* media */
+
+@media screen and (min-width: 400px) {
+
+  .welcome {
+      padding: 1rem;
+      margin: 1rem;
+      padding-bottom: 2.5rem;
+  }
+
+  h1 { 
+      font-size: 30px;
+  }
+
+  .col-12, .col-md-6 {
+      padding: 0;
+  }
+}
