@@ -55,13 +55,13 @@ class App extends Component {
     return (
       <div className="App">
         <Header updateUser={this.updateUser} loggedIn={this.state.loggedIn} />
-        {/* greet user if logged in: */}
-        {this.state.loggedIn &&
-          <p>Join the party, {this.state.username}!</p>
-        }
-        {/* Routes to different components */}
+     {/*    {/* greet user if logged in: */}
+   
         <Route
           exact path="/"
+          component={LoginForm} />
+        <Route
+          exact path="/Home"
           component={Home} />
         <Route
           exact path="/Books"
