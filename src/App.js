@@ -6,6 +6,7 @@ import Signup from './pages/sign-up';
 import LoginForm from './pages/login-form';
 import Home from './pages/Home';
 import Books from './pages/Books';
+import Header from './components/Header';
 import './App.css';
 
 class App extends Component {
@@ -53,8 +54,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-   
-        
+        <Header updateUser={this.updateUser} loggedIn={this.state.loggedIn} />
         {/* greet user if logged in: */}
         {this.state.loggedIn &&
           <p>Join the party, {this.state.username}!</p>
