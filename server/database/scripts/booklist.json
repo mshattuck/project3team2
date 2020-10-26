@@ -1,0 +1,95 @@
+[
+	{
+		"Id": "1",
+		"Title": "The Nickel Boys",
+		"Author": "Colson Whitehead",
+		"Award_Year": "2020",
+		"Fiction": "Y",
+		"URL to cover image": "https://www.pulitzer.org/cms/sites/default/files/content/9780385537070.jpeg",
+		"users": ["5f945e48b143f8371409b5a0", "5f945e48b143f8371409b5a1", "5f945e48b143f8371409b5a2", "5f945e48b143f8371409b5a3", "5f945e48b143f8371409b5a4"]
+	},
+	{
+		"Id": "2",
+		"Title": "The Overstory",
+		"Author": "Richard Powers",
+		"Award_Year": "2019",
+		"Fiction": "Y",
+		"URL to cover image": "https://www.pulitzer.org/cms/sites/default/files/content/9780393356687_300.jpeg",
+		"users": ["5f95f65dddcc6f47305bd1a8"]
+	},
+	{
+		"Id": "3",
+		"Title": "Less",
+		"Author": "Andrew Sean Greer",
+		"Award_Year": "2018",
+		"Fiction": "Y",
+		"URL to cover image": "https://www.pulitzer.org/cms/sites/default/files/content/31933085.jpg",
+		"users":["5f95f65dddcc6f47305bd1a9"]
+	},
+	{
+		"Id": "4",
+		"Title": "The Underground Railroad",
+		"Author": "Colson Whitehead",
+		"Award_Year": "2017",
+		"Fiction": "Y",
+		"URL to cover image": "https://www.pulitzer.org/cms/sites/default/files/content/whitehead-cover.jpg",
+		"users":["5f95f65dddcc6f47305bd1aa"]
+	},
+	{
+		"Id": "5",
+		"Title": "The Sympathizer",
+		"Author": "Viet Thanh Nguyen",
+		"Award_Year": "2016",
+		"Fiction": "Y",
+		"URL to cover image": "https://www.pulitzer.org/cms/sites/default/files/content/2016/thesympathizercover200.jpg"
+	},
+	{
+		"Id": "6",
+		"Title": "All the Light We Cannot See",
+		"Author": "Anthony Doerr",
+		"Award_Year": "2015",
+		"Fiction": "Y",
+		"URL to cover image": "https://www.pulitzer.org/cms/sites/default/files/content/allthelight200.jpg"
+	},
+	{
+		"Id": "7",
+		"Title": "The Goldfinch",
+		"Author": "Donna Tartt",
+		"Award_Year": "2014",
+		"Fiction": "Y",
+		"URL to cover image": "https://www.pulitzer.org/cms/sites/default/files/content/the_goldfinch_by_donna_tart.png"
+	},
+	{
+		"Id": "8",
+		"Title": "The Orphan Master's Son",
+		"Author": "Adam Johnson",
+		"Award_Year": "2013",
+		"Fiction": "Y",
+		"URL to cover image": "https://www.pulitzer.org/cms/sites/default/files/content/orphanmastercover.jpg"
+	},
+	{
+		"Id": "9",
+		"Title": "A Visit from the Goon Squad",
+		"Author": "Jennifer Egan",
+		"Award_Year": "2011",
+		"Fiction": "Y",
+		"URL to cover image": "https://www.pulitzer.org/cms/sites/default/files/content/egancover2011.jpg",
+		"users":["5f95f65dddcc6f47305bd1a7","5f95f65dddcc6f47305bd1a9","5f95f65dddcc6f47305bd1ab"]
+	},
+	{
+		"Id": "10",
+		"Title": "Tinkers",
+		"Author": "Paul Harding",
+		"Award_Year": "2010",
+		"Fiction": "Y",
+		"URL to cover image": "https://www.pulitzer.org/cms/sites/default/files/archives/works_images/tinkers.jpg"
+	},
+	{
+		"Id": "11",
+		"Title": "Olive Kitteridge",
+		"Author": "Elizabeth Strout",
+		"Award_Year": "2009",
+		"Fiction": "Y",
+		"URL to cover image": "https://www.pulitzer.org/cms/sites/default/files/content/olivekitteridge.jpg"
+	}
+]

@@ -1,0 +1,32 @@
+[
+    {
+        "id": "1",
+        "username": "Argos",
+        "password": "ruffruff",
+        "books": ["5f94644b8b3f8f1d442216c4","5f95f65dddcc6f47305bd1b4"]
+    },
+    {
+        "id": "2",
+        "username": "Benedicta",
+        "password": "ruffruff",
+        "books": ["5f94644b8b3f8f1d442216c4", "5f95f65dddcc6f47305bd1ad"]
+    },
+    {
+        "id": "3",
+        "username": "Jessica",
+        "password": "ruffruff",
+        "books": ["5f94644b8b3f8f1d442216c4", "5f95f65dddcc6f47305bd1ae","5f95f65dddcc6f47305bd1b4"]
+    },
+    {
+        "id": "4",
+        "username": "Kim",
+        "password": "ruffruff",
+        "books": ["5f94644b8b3f8f1d442216c4","5f95f65dddcc6f47305bd1af"]
+    },
+    {
+        "id": "5",
+        "username": "Michael",
+        "password": "ruffruff",
+        "books": ["5f94644b8b3f8f1d442216c4","5f95f65dddcc6f47305bd1b1","5f95f65dddcc6f47305bd1b4"]
+    }
+]
