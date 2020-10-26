@@ -3,6 +3,9 @@ const router = express.Router()
 const User = require('../database/models/user')
 const passport = require('../passport')
 
+//from 2
+const usersController = require("../../controllers/users");
+
 router.post('/', (req, res) => {
     console.log('user signup');
 
@@ -64,5 +67,18 @@ router.post('/logout', (req, res) => {
         res.send({ msg: 'no user to log out' })
     }
 })
+
+//from 2
+// Matches with "/api/users"
+router.route("/")
+  .get(usersController.findAll)
+  .post(usersController.create);
+
+//Matches with "/api/users/:id"
+router.route("/:id")
+  .get(usersController.findById)
+  // .put(usersController.update)
+  // .delete(usersController.remove);
+
 
 module.exports = router
