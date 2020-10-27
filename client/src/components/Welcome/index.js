@@ -8,7 +8,7 @@ import './style.css';
 
 function Welcome(props) 
 {
-    const [User, setUser] = useState({})
+    const [user, setUser] = useState({})
 
     const { id } = useParams();
     useEffect(() => {
@@ -20,11 +20,10 @@ function Welcome(props)
         .catch(err => console.log(err));
     }, [])
 
-
     return(
         <div class='col-12'>
             <section class='welcome'>
-                {/* <h1>Hello <p>{user.username}</p></h1> */}
+                <h1>Hello <p>{user.username}</p></h1>
                 <h1>Hello</h1>
                 <p class='AofW-text'>Meet and connect with your follow readers</p>
             </section>
