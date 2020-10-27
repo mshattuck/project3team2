@@ -1,0 +1,45 @@
+/* Match Item */
+
+.matches {
+    overflow: auto;
+    white-space: nowrap;
+    padding-bottom: 1rem;
+    margin: 0 1rem 0 1rem;
+}
+
+.match-item {
+    padding: 1.5rem 2rem 1.5rem 2rem;
+    background-color: #D99473;
+    border-style: none;
+    border-radius: .5rem;
+    color: #2A3950;
+    margin: 0 .5rem 0 0;
+}
+
+.match-name {
+    margin-bottom: .5rem;
+}
+
+/* Sroll bar */
+
+    /* width */
+    .matches::-webkit-scrollbar {
+        height: .3rem;
+    }
+    
+    /* Track */
+    .matches::-webkit-scrollbar-track {
+        background: #D1DFE8; 
+        border-radius: .5rem;
+    }
+    
+    /* Handle */
+    .matches::-webkit-scrollbar-thumb {
+        background: #355C7D;
+        border-radius: .5rem;
+    }
+    
+    /* Handle on hover */
+    .matches::-webkit-scrollbar-thumb:hover {
+        background: #4b7091; 
+    }
