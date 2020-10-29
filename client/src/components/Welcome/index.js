@@ -1,13 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { getUser } from "../../api/user";
-
-/* const stuff = require("../../") */
 
 import './style.css';
 
-function Welcome(props) 
-{
+function Welcome() {
     const [user, setUser] = useState({})
 
     const { id } = useParams();

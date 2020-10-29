@@ -13,19 +13,12 @@ module.exports = {
           .then(dbModel => res.json(dbModel))
           .catch(err => res.status(422).json(err));
     },
-    create: function(req,res) {
-      db.User
-        .create(req.body)
-        .then(dbModel => res.json(dbModel))
-        .catch(err => res.status(422).json(err))
-    },
     create: async function(req,res) {
         try {
-            book = req.params;
-            id = book.id
+            const { book: { id } } = req.params;
             const {username, password} = req.body;
-            const bookById = await Book.findById(id);
-            const book = await User.create({
+            const bookById = await db.Book.findById(id);
+            const book = await db.User.create({
                 name,
                 password,
                 book: bookById
@@ -36,10 +29,5 @@ module.exports = {
         catch(err) {
             res.status(422).json(err)
         }
-    },
-    booksByUser: async function(req,res) {
-        const {id} = req.params;
-        const booksByUser = await (await User.findById(id)).populate('book');
-        res.send(booksByUser)
     }
 }

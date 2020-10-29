@@ -5,10 +5,19 @@ const session = require('express-session')
 const dbConnection = require('./database') 
 const MongoStore = require('connect-mongo')(session)
 const passport = require('./passport');
-const app = express()
-const PORT = 8080
+const routes = require('./routes');
+const app = express();
+
+const PORT = 8080;
 // Route requires
 const user = require('./routes/api/users')
+
+
+app.use(function(req, res, next) {
+	res.header("Access-Control-Allow-Origin", "*");
+	next();
+});
+
 
 // MIDDLEWARE
 app.use(morgan('dev'))
@@ -36,6 +45,7 @@ app.use(passport.session()) // calls the deserializeUser
 
 // Routes
 app.use('/user', user)
+app.use(routes);
 
 // Starting Server 
 app.listen(PORT, () => {

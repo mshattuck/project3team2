@@ -1,4 +1,4 @@
-const db = require("../models");
+const db = require("../database/models");
 
 module.exports = {
     findAll: function(req, res) {
@@ -16,16 +16,10 @@ module.exports = {
         .then(dbModel => res.json(dbModel))
         .catch(err => res.status(422).json(err));
     },
-    create: function(req,res) {
-      db.Book
-        .create(req.body)
-        .then(dbModel => res.json(dbModel))
-        .catch(err => res.status(422).json(err))
-    },
     create: async function(req,res) {
       try {
-        user = req.params;
-        id = user.id
+        const user = req.params;
+        const id = user.id
         const {title, author, award_year} = req.body;
         const userById = await User.findById(id);
         const book = await Book.create({
@@ -43,7 +37,18 @@ module.exports = {
     },    
     userbyBook: async function(req,res) {
         const {id} = req.params;
-        const userbyBook = await (await Book.findById(id)).populate('user');
+        const userbyBook = await (await db.Book.findById(id)).populate('user');
         res.send(userbyBook);
+    },
+    booksByUser: async function(req, res) {
+      console.log('entering books by user...');
+      console.log('req.params: ', req.params);
+      console.log('req.query: ', req.query)
+      const { params: { id } } = req;
+      console.log('userId: ', id);
+      const booksByUser = await db.User.findById(id).populate('books');
+      console.log('booksByUser: ', JSON.stringify(booksByUser, null, 2));
+
+      res.status(200).json(booksByUser.books);
     }
 }

@@ -4,41 +4,41 @@ import Grid from '../components/Grid';
 import AddBook from '../components/AddBook';
 import React, { Component } from 'react'
 
-/* function Home() {
+function Home() {
     return (
         <React.Fragment>
-            < Welcome />
-            < Grid />
-            < AddBook />
+            <Welcome />
+            <Grid />
+            <AddBook />
         </React.Fragment>
     )
 }
 
-export default Home; */
+export default Home;
 
 
 
-class Home extends Component {
-    constructor() {
-        super()
-    }
+// class Home extends Component {
+//     constructor() {
+//         super()
+//     }
+//
+//
+//     render() {
+//         const imageStyle = {
+//             width: 400
+//         }
+//         return (
+//             <div>
+//                 <p>DOGEAR'D Welcome</p>
+//
+//             </div>
+//
+//
+//
+//         )
+//
+//     }
+// }
 
-
-    render() {
-        const imageStyle = {
-            width: 400
-        }
-        return (
-            <div>
-                <p>DOGEAR'D Welcome</p>
-           
-            </div>
-
-
-
-        )
-
-    }
-}
-
-export default Home
+// export default Home
