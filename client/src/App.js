@@ -10,12 +10,14 @@ import { StoreProvider, useStoreContext } from './util/GlobalState';
 function App() {
   const [store] = useStoreContext();
 
+ 
+
     return (
       <div className="App">
         <StoreProvider>
-          <Header />
+         <Header /> 
           {/* greet user if logged in: */}
-          {store && store.loggedIn && store.user && <p>Welcome, {store.user.username}!</p>}
+          
           {/* Routes to different components */}
           <Route path="/home" component={Home} />
           <Route path="/login" component={LoginForm} />
