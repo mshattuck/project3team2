@@ -15,30 +15,3 @@ function Home() {
 }
 
 export default Home;
-
-
-
-// class Home extends Component {
-//     constructor() {
-//         super()
-//     }
-//
-//
-//     render() {
-//         const imageStyle = {
-//             width: 400
-//         }
-//         return (
-//             <div>
-//                 <p>DOGEAR'D Welcome</p>
-//
-//             </div>
-//
-//
-//
-//         )
-//
-//     }
-// }
-
-// export default Home
