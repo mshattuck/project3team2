@@ -21,5 +21,5 @@ export function addBookToUser(userID, bookID){
 }
 
 export function getBookofWeek() {
-    return axios.get('http://localhost:8080/api/BookofWeek');
+    return axios.get('http://localhost:8080/api/bofw/BookofWeek');
 }

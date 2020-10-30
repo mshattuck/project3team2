@@ -38,7 +38,7 @@ function AddBook() {
                 {(books && books.length > 0) ?
                 <section className='book-list d-flex flex-wrap justify-content-around align-items-center'>
                     {books.map(book => (
-                        <motion.button className='add-book' whileHover={{ scale:1.1 }} whileTap={{ scale: 0.9 }} >
+                        <motion.button className='add-book' whileHover={{ scale:1.1 }} whileTap={{ scale: 0.9 }}>
                             <h4 className='new-book-title d-inline'>{book.Title}</h4>
                             <h2 className='new-book-plus d-inline'>+</h2>
                         </motion.button>

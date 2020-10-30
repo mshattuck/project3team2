@@ -6,6 +6,7 @@ import './style.css';
   
 
 function AuthorofWeek() {
+    console.log('authorofweek');
     const [store] = useStoreContext();
     const [bookofWeek, setBookofWeek] = useState({})
 
