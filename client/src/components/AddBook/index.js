@@ -28,41 +28,28 @@ function AddBook() {
       
     
     return(
-        <div className="col-12">
-            <div className='col title'>
-                <h2>Add a Book</h2>
+        <React.Fragment>
+            <div className="col-12">
+                <div className='col title'>                
+                    <h2>Add a Book</h2>
+                </div>
+                {(books && books.length > 0) ?
+                <section className='book-list d-flex flex-wrap justify-content-around align-items-center'>
+                    {books.map(book => (
+                        <button className='add-book'>
+                            <h4 className='new-book-title d-inline'>{book.Title}</h4>
+                            <h2 className='new-book-plus d-inline'>+</h2>
+                        </button>
+                ))}
+                </section>
+                 :  <button className='add-book'>
+                        <h4 className='new-book-title d-inline'>Books to come...</h4>
+                        <h2 className='new-book-plus d-inline'>+</h2>
+                    </button>
+                }
             </div>
-            <section className='book-list d-flex flex-wrap justify-content-around align-items-center'>
-                <button className='add-book'>
-                    <h4 className='new-book-title d-inline'>All the Light We Cannot See</h4>
-                    <h2 className='new-book-plus d-inline'>+</h2>
-                </button>
-                <button className='add-book'>
-                    <h4 className='new-book-title d-inline'>The Nickel Boys</h4>
-                    <h2 className='new-book-plus d-inline'>+</h2>
-                </button>
-                <button className='add-book'>
-                    <h4 className='new-book-title d-inline'>The Overstory</h4>
-                    <h2 className='new-book-plus d-inline'>+</h2>
-                </button>
-                <button className='add-book'>
-                    <h4 className='new-book-title d-inline'>Less</h4>
-                    <h2 className='new-book-plus d-inline'>+</h2>
-                </button>
-                <button className='add-book'>
-                    <h4 className='new-book-title d-inline'>The Sympathizer</h4>
-                    <h2 className='new-book-plus d-inline'>+</h2>
-                </button>
-                <button className='add-book'>
-                    <h4 className='new-book-title d-inline'>The Goldfinch</h4>
-                    <h2 className='new-book-plus d-inline'>+</h2>
-                </button>
-                <button className='add-book'>
-                    <h4 className='new-book-title d-inline'>Tinker</h4>
-                    <h2 className='new-book-plus d-inline'>+</h2>
-                </button>
-            </section>
-        </div>
+    
+        </React.Fragment>
     )
 }
 
