@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import { Redirect } from 'react-router-dom'
 import axios from 'axios'
+import './login.css';
 
 class Signup extends Component {
 	constructor() {
@@ -9,7 +9,6 @@ class Signup extends Component {
 			username: '',
 			password: '',
 			confirmPassword: '',
-			redirectTo: null
 
 		}
 		this.handleSubmit = this.handleSubmit.bind(this)
@@ -48,57 +47,51 @@ class Signup extends Component {
 	}
 
 
-	render() {
-		if (this.state.redirectTo) {
-			return <Redirect to={{ pathname: this.state.redirectTo }} />
-		} else {
-			return (
-				<div className="SignupForm">
-					<h4>Sign up</h4>
-					<form className="form-horizontal">
-						<div className="form-group">
-							<div className="col-1 col-ml-auto">
-								<label className="form-label" htmlFor="username">Username</label>
-							</div>
-							<div className="col-3 col-mr-auto">
-								<input className="form-input"
-									type="text"
-									id="username"
-									name="username"
-									placeholder="Username"
-									value={this.state.username}
-									onChange={this.handleChange}
-								/>
-							</div>
+render() {
+	return (
+		<div className="SignupForm">
+				<h1 className='signup-title'>Sign up</h1>
+				<h2 className='signup-subtitle'>Welcome book lovers</h2>
+				<form className="form-horizontal">
+					<div className="form-group username">
+						<div className="col-12 col-md-5">
+							<input className="form-input"
+								type="text"
+								id="username"
+								name="username"
+								placeholder="Username"
+								value={this.state.username}
+								onChange={this.handleChange}
+							/>
 						</div>
-						<div className="form-group">
-							<div className="col-1 col-ml-auto">
-								<label className="form-label" htmlFor="password">Password: </label>
-							</div>
-							<div className="col-3 col-mr-auto">
-								<input className="form-input"
-									placeholder="password"
-									type="password"
-									name="password"
-									value={this.state.password}
-									onChange={this.handleChange}
-								/>
-							</div>
+					</div>
+					<div className="form-group password">
+						<div className="col-12 col-md-5">
+							<input className="form-input"
+								placeholder="password"
+								type="password"
+								name="password"
+								value={this.state.password}
+								onChange={this.handleChange}
+							/>
 						</div>
-						<div className="form-group ">
-							<div className="col-7"></div>
-							<button
-								className="btn btn-primary col-1 col-mr-auto"
+					</div>
+					<div className='button-holder'>
+						<div className="form-group col-md-5 d-flex justify-content-end">
+							<button className="login-button btn btn-primary col-3 col-md-1 d-flex justify-content-center align-items-center"
 								onClick={this.handleSubmit}
-								type="submit"
-							>Sign up</button>
+								type="submit">
+								Sign up
+							</button>
 						</div>
-					</form>
-				</div>
+					</div>
+					
+				</form>
+			</div>
+		
 
-			)
-		}
-	}
+	)
+}
 }
 
 export default Signup
