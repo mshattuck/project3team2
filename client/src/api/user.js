@@ -12,3 +12,7 @@ export function getAllBooks(){
     return axios.get("http://localhost:8080/api/books");
 }
 
+//add book
+/* 
+export function addBookToUser(){
+    return axios.get("http://localhost:8080/api/"); */
