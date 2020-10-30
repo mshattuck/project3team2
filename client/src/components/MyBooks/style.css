@@ -29,10 +29,6 @@
     transition: transform .2s;
 }
 
-.book-item:hover {
-    transform: scale(1.03);
-}
-
 .book-item-text {
     background-color: white;
     height: 4rem;
@@ -47,6 +43,13 @@
     background-color: #355C7D;
     border-radius: 0 2rem 2rem 0;
     color: #e8e8e8;
+}
+
+.no-book-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2A3950;
 }
 
 /* Sroll bar */

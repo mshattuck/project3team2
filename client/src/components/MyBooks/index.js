@@ -2,6 +2,7 @@ import React, { useState, useEffect, useContext } from "react";
 import "./style.css";
 import { getBooks } from "../../api/user";
 import {useStoreContext} from "../../util/GlobalState";
+import { motion } from "framer-motion";
 
 
 function MyBooks() {
@@ -28,7 +29,7 @@ function MyBooks() {
               <section className="my-books">
                   <div className="my-book-list">
                       {books.map(book => (
-                          <div className="row book-item">
+                          <motion.div className="row book-item" whileHover={{ scale:1.1 }} whileTap={{ scale: 0.9 }}>
                               <div className="col-9 book-item-text">
                                   <h2>{book.Title}</h2>
                                   <p>{book.Author}</p>
@@ -36,11 +37,15 @@ function MyBooks() {
                               <button className="col-3 book-item-button">
                                   <h3>GO</h3>
                               </button>
-                          </div>
+                          </motion.div>
                         ))}
                   </div>
               </section>
-              : <h1>No Books yet, get to reading</h1>
+              : <section className="my-books">
+                    <div className="no-book-message">
+                        <h1>No Books yet, get to reading</h1>
+                    </div>
+                </section>
             }
         </React.Fragment>
     );

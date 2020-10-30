@@ -14,8 +14,12 @@
     transition: transform .2s;
 }
 
-.add-book:hover {
-    transform: scale(1.05);
+.add-book-title {
+    padding: 0 1rem 1rem 1rem;
+}
+
+.title {
+    margin-bottom: .5rem;
 }
 
 .new-book-title{
@@ -31,6 +35,9 @@
 @media screen and (min-width: 400px) {
 
     /* Total Book List */
+    .section {
+        margin-bottom: 3rem;
+    }
     .book-list {
         margin: 0 1rem 0 1rem;
     }
@@ -44,12 +51,12 @@
     }
 
     .new-book-title {
-        padding-right: 4rem;
+        padding-right: 3rem;
     } 
 }
 
 @media screen and (min-width: 600px) {
     .new-book-title {
-        padding-right: 8rem;
+        padding-right: 2rem;
     } 
 }

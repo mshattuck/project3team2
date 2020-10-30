@@ -1,5 +1,9 @@
 /* header area */
 
+header {
+    background-color: #D1DFE8;
+}
+
 #corner {
     position: absolute;
     top: 0;

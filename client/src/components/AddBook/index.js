@@ -1,14 +1,16 @@
-import React, { useState, useEffect } from 'react';
-import './style.css';
+import React, { useState, useEffect} from 'react';
 import { getAllBooks } from "../../api/user";
 import {useStoreContext} from "../../util/GlobalState";
+import { motion } from "framer-motion"
+import './style.css';
+
 
 function AddBook() {
- 
-        console.log("running AddBook()");
 
+        
+        console.log("running AddBook()");
         const [books, setBooks] = useState([]);
-      //  const [formObject, setFormObject] = useState({});
+        //  const [formObject, setFormObject] = useState({});
       
         // Load all books and store them with setBooks
         useEffect(() => {
@@ -29,17 +31,17 @@ function AddBook() {
     
     return(
         <React.Fragment>
-            <div className="col-12">
-                <div className='col title'>                
+            <div className="col-12 section">
+                <div className='col add-book-title'>                
                     <h2>Add a Book</h2>
                 </div>
                 {(books && books.length > 0) ?
                 <section className='book-list d-flex flex-wrap justify-content-around align-items-center'>
                     {books.map(book => (
-                        <button className='add-book'>
+                        <motion.button className='add-book' whileHover={{ scale:1.1 }} whileTap={{ scale: 0.9 }}>
                             <h4 className='new-book-title d-inline'>{book.Title}</h4>
                             <h2 className='new-book-plus d-inline'>+</h2>
-                        </button>
+                        </motion.button>
                 ))}
                 </section>
                  :  <button className='add-book'>
