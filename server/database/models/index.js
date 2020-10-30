@@ -1,5 +1,6 @@
 module.exports = {
     Book: require("./books"),
-    User: require("./user")
+    User: require("./user"),
+    BookofWeek: require('./bofw')
 };
   

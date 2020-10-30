@@ -1,7 +1,25 @@
-import React from 'react';
+import React, { useState, useEffect} from "react";
+import { getBookofWeek } from "../../api/user";
+import {useStoreContext} from "../../util/GlobalState";
 import './style.css';
 
+  
+
 function AuthorofWeek() {
+    const [store] = useStoreContext();
+    const [bookofWeek, setBookofWeek] = useState({})
+
+    useEffect(() => {
+        console.log('store: ', store);
+
+        getBookofWeek(store)
+        .then(res => {
+            console.log('res: ', res);
+            return setBookofWeek(res.data);
+        })
+        .catch(err => console.log(err));
+    }, [store.user]);
+
     return (
             <React.Fragment>
                 <div class='col d-flex justify-content-left title'>

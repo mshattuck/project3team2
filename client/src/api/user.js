@@ -12,7 +12,14 @@ export function getAllBooks(){
     return axios.get("http://localhost:8080/api/books");
 }
 
-//add book
-/* 
-export function addBookToUser(){
-    return axios.get("http://localhost:8080/api/"); */
+export function getBookbyID(id) {
+    return axios.get(`http://localhost:8080/api/books/${id}`)
+}
+
+export function addBookToUser(userID, bookID){
+    return axios.post("http://localhost:8080/api/user/addBook");
+}
+
+export function getBookofWeek() {
+    return axios.get('http://localhost:8080/api/BookofWeek');
+}

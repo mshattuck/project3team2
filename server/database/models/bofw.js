@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const bookSchema = new Schema ({
+const bookofWeekSchema = new Schema ({
     Title: {
         type: String
     }, 
@@ -11,11 +11,8 @@ const bookSchema = new Schema ({
     Award_Year: {
         type: Number
     },
-    users: [
-        {type: mongoose.Schema.Types.ObjectId,ref:'User'}
-    ]
 });
 
-const Book = mongoose.model("Book", bookSchema);
+const BookofWeek = mongoose.model("BookofWeek", bookofWeekSchema);
 
-module.exports = Book;
+module.exports = BookofWeek;

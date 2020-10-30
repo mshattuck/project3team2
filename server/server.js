@@ -7,6 +7,7 @@ const MongoStore = require('connect-mongo')(session)
 const passport = require('./passport');
 const routes = require('./routes');
 const app = express();
+const job = require('./cron/cron');
 
 const PORT = process.env.PORT || 8080;
 // Route requires
@@ -18,6 +19,8 @@ app.use(function(req, res, next) {
 	next();
 });
 
+//starts cron;
+job.start();
 
 // MIDDLEWARE
 app.use(morgan('dev'))
