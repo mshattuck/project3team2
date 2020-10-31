@@ -6,11 +6,11 @@ import MyBooks from '../MyBooks';
 
 function Grid() {
     return (
-        <div className='row grid'>
-            <div className='col-12 col-md-6 author-of-week'>   
+        <div class='row grid'>
+            <div class='col-12 col-md-6 author-of-week'>   
                 <AuthorofWeek />
             </div>
-            <div className='col-12 col-md-6 my-books-fragment'>
+            <div class='col-12 col-md-6 my-books-fragment'>
                 <MyBooks />
             </div>
         </div>

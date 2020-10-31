@@ -1,11 +1,11 @@
 /* Book Page Title Element */
 
 .book {
+    margin: 1rem;
     background-color: #355C7D;
     color: #e8e8e8;
     padding: 1rem;
     border-radius: .5rem;
-    margin: 2rem 1rem 1rem 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;

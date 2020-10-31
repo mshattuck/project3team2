@@ -1,7 +1,12 @@
 /*comment section*/
 
+h5 {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
 .comments {
-    margin: 2.5rem 1rem 1rem 1rem;
+    margin: 1rem 0 0 0;
     padding: 1rem 2rem 1rem 1rem;
     background-color: #D1DFE8;
     border-radius: .5rem;
@@ -24,10 +29,11 @@
 }
 
 .comment-input-area {
-    margin: 0 1rem 1rem 1rem;
+    margin: 1rem 0 1rem 0;
 }
 
 .comment-input {
+    padding-left: 1rem;
     height: 3rem;
     border-width: 2px;
     border-radius: .5rem;
@@ -36,10 +42,20 @@
 }
 
 .buttons {
-    margin: 0 1rem 2rem 1rem;
+    margin: 0 0 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
 
-.home-button {
+.home-button, .submit-comment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Josefin Slab', serif;
+    font-weight: 400;
+    font-size: 15px;
     background-color: #D99473;
     padding: .5rem 2.5rem .5rem 2.5rem;
     border-style: none;
@@ -49,10 +65,6 @@
 
 .submit-comment {
     background-color: #355C7D;
-    padding: .5rem 2.5rem .5rem 2.5rem;
-    border-style: none;
-    border-radius: .5rem;
-    color: white;
 }
 
 /* Sroll bar */
@@ -83,6 +95,7 @@
 
 @media screen and (min-width: 400px) {
 
-    
-
+    .comments {
+        min-height: 450px;
+    }
 }

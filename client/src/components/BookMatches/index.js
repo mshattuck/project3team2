@@ -3,7 +3,7 @@ import './style.css';
 
 function BookMatches() {
     return (
-        <div className='row'>
+        <div className='row matches'>
             <div className="col-12">
                 <div className='col title'>
                     <h2>Matches</h2>

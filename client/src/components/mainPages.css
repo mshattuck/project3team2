@@ -3,7 +3,14 @@ body {
     font-family: 'Josefin Slab', serif;
 }
 
-.AofW, .my-books, .add-book-area {
+.AofW, .my-books, .add-book-area, .bookStack {
     margin: 1rem;
 }
 
+.bookStack {
+    padding: 1rem;
+}
+
+.main {
+    margin: 1rem;
+}
