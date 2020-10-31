@@ -1,12 +1,3 @@
-
-1. Download project directory locally
-2. Start mongo db
-3. Go to project directory
-4. Run npm install
-5. In the terminal navigate to /server subfolder
-6. Run 'nodemon server.js'
-7. In another terminal window, in the main project directory, run 'npm start' 
-
 # DOG EARd
 A mobile first application for book-lovers. Users can add books to their profile and be matched with people who have similar tastes. 
 
@@ -33,6 +24,16 @@ WHEN I click on one of my selected books
 THEN I can view and communicate with my matched readers
 ```
 
+### Use
+```
+Download project directory locally
+Enter project directory
+navigate to client folder and run npm install
+In new terminal window, navigate to server folder and run npm install
+Run npm run seed in server folder
+Run npm start in each terminal
+```
+
 ## Credits
 This MERN application uses [React](https://reactjs.org/), [Express](https://www.npmjs.com/package/express), [Node](https://nodejs.org/en/), [MongoDB](https://www.mongodb.com/), [Mongoose](https://www.npmjs.com/package/mongoose/), [Framer](https://www.framer.com/), and [node-cron](https://www.npmjs.com/package/cron).
  
@@ -42,4 +43,4 @@ A collaboration between [Kim Credit](https://github.com/kimcredit), [Benedicta K
   
 
 ## License
-Copyright (c) 2020 Kim Credit.
+Copyright (c) 2020.
