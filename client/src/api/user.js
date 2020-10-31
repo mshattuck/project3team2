@@ -16,8 +16,8 @@ export function getBookbyID(id) {
     return axios.get(`http://localhost:8080/api/books/${id}`)
 }
 
-export function addBookToUser(userID, bookID){
-    return axios.post("http://localhost:8080/api/user/addBook");
+export function addBookToUser(bookId, userId){
+    return axios.post(`http://localhost:8080/api/user/addbook/${bookId}/user/${userId}`);
 }
 
 export function getBookofWeek() {

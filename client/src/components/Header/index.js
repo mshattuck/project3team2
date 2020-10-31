@@ -1,9 +1,10 @@
-import React, { useEffect } from 'react'
-import { Link } from 'react-router-dom'
-import './style.css';
-import axios from 'axios'
+import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { SET_LOGGED_IN, SET_USER } from "../../util/actions";
 import { useStoreContext } from '../../util/GlobalState';
+import axios from 'axios';
+import './style.css';
+
 
 function Header() {
   const [store, dispatch] = useStoreContext();

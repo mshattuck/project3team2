@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
-import "./style.css";
+import { Link } from 'react-router-dom';
 import { getBooks } from "../../api/user";
 import {useStoreContext} from "../../util/GlobalState";
 import { motion } from "framer-motion";
+import "./style.css";
 
 
 function MyBooks() {
@@ -30,13 +31,15 @@ function MyBooks() {
                   <div className="my-book-list">
                       {books.map(book => (
                           <motion.div className="row book-item" whileHover={{ scale:1.1 }} whileTap={{ scale: 0.9 }}>
-                              <div className="col-9 book-item-text">
-                                  <h2>{book.Title}</h2>
-                                  <p>{book.Author}</p>
-                              </div>
-                              <button className="col-3 book-item-button">
-                                  <h3>GO</h3>
-                              </button>
+                              <Link to="/books">
+                                <div className="col-9 book-item-text">
+                                    <h2>{book.Title}</h2>
+                                    <p>{book.Author}</p>
+                                </div>
+                                <button className="col-3 book-item-button">
+                                    <h3>GO</h3>
+                                </button>
+                              </Link>
                           </motion.div>
                         ))}
                   </div>

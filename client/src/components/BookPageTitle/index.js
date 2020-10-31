@@ -10,9 +10,8 @@ function BookPageTitle() {
                         <div className='col'>
                             <div className='container-fluid book-info'>
                                 <h1 className='book-name'>All the Light we Cannot See</h1>
-                                <p className='book-text'>Anthony Doerr</p>
-                                <p className='book-text'>Publication year</p>
-                                <p className='book-text'>Award Year</p>
+                                <p className='book-text'>Author: Anthony Doerr</p>
+                                <p className='book-text'>Award Year: 2015</p>
                             </div>
                         </div>
                         <div className='col-4'>

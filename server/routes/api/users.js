@@ -39,9 +39,7 @@ router.post(
   passport.authenticate('local'),
   (req, res) => {
       console.log('logged in', req.user);
-      var userInfo = {
-          username: req.user.username
-      };
+      const userInfo = {username: req.user.username};
       res.send(userInfo);
   }
 )
@@ -74,7 +72,8 @@ router.route("/")
 //Matches with "/api/users/:id"
 router.route("/:id")
 .get(usersController.findById)
-// .put(usersController.update)
-// .delete(usersController.remove);
+
+router.route("/addbook/:bookId/user/:userId")
+.post(usersController.update)
 
 module.exports = router;

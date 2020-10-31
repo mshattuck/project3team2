@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './style.css';
 
 function BookComments() {
@@ -29,7 +30,9 @@ function BookComments() {
                 </div>
                 <div className='buttons d-flex justify-content-between align-items-center'>
                     <button className='home-button'>
-                        <h5>Home</h5>
+                    <Link to="/home" className="btn btn-link text-secondary">
+                        <span className="text-secondary">Home</span>
+                    </Link>
                     </button>
                     <button className='submit-comment'>
                         <h5>Submit</h5>

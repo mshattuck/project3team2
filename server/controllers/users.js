@@ -29,5 +29,21 @@ module.exports = {
         catch(err) {
             res.status(422).json(err)
         }
-    }
+    },
+    update: async function (req, res) {
+        const {bookId, userId} = req.params
+        console.log(req.params)
+      try {
+        const book = await db.Book.findById(bookId)
+        const user = await db.User.findById(userId)
+
+        user.books.push(book)
+        await user.save()
+        res.send (user.books)
+        console.log(user.books)
+      }
+      catch(err) {
+        res.status(422).json(err)
+      }
+    },
 }
