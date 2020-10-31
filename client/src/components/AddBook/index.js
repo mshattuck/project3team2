@@ -30,26 +30,27 @@ function AddBook() {
     
     return(
         <React.Fragment>
-            <div className="col-12 section">
-                <div className='col add-book-title'>                
-                    <h2>Add a Book</h2>
-                </div>
-                {(books && books.length > 0) ?
-                <section className='book-list d-flex flex-wrap justify-content-around align-items-center'>
-                    {books.map(book => (
-                        <motion.button className='add-book' whileHover={{ scale:1.1 }} whileTap={{ scale: 0.9 }} onClick={() => addBookToUser(book._id, store.user._id)}>
-                            <h4 className='new-book-title d-inline'>{book.Title}</h4>
+            <div className='row add-book-area'>
+                <div className="col-12 section">
+                    <div className='col add-book-title'>                
+                        <h2>Add a Book</h2>
+                    </div>
+                    {(books && books.length > 0) ?
+                    <section className='book-list d-flex flex-wrap justify-content-around align-items-center'>
+                        {books.map(book => (
+                            <motion.button className='add-book' whileHover={{ scale:1.1 }} whileTap={{ scale: 0.9 }} onClick={() => addBookToUser(book._id, store.user._id)}>
+                                <h4 className='new-book-title d-inline'>{book.Title}</h4>
+                                <h2 className='new-book-plus d-inline'>+</h2>
+                            </motion.button>
+                    ))}
+                    </section>
+                    :  <button className='add-book'>
+                            <h4 className='new-book-title d-inline'>Books to come...</h4>
                             <h2 className='new-book-plus d-inline'>+</h2>
-                        </motion.button>
-                ))}
-                </section>
-                 :  <button className='add-book'>
-                        <h4 className='new-book-title d-inline'>Books to come...</h4>
-                        <h2 className='new-book-plus d-inline'>+</h2>
-                    </button>
-                }
+                        </button>
+                    }
+                </div>
             </div>
-    
         </React.Fragment>
     )
 }

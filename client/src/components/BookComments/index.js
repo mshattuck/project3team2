@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { motion } from "framer-motion";
 import './style.css';
 
 function BookComments() {
@@ -29,14 +30,14 @@ function BookComments() {
                     <input className='comment-input col-12' placeholder='Leave a Comment' />
                 </div>
                 <div className='buttons d-flex justify-content-between align-items-center'>
-                    <button className='home-button'>
+                    <motion.button className='home-button' whileHover={{ scale:1.05 }} whileTap={{ scale: 0.9 }}>
                     <Link to="/home" className="btn btn-link text-secondary">
                         <span className="text-secondary">Home</span>
                     </Link>
-                    </button>
-                    <button className='submit-comment'>
+                    </motion.button>
+                    <motion.button className='submit-comment' whileHover={{ scale:1.05 }} whileTap={{ scale: 0.9 }}>
                         <h5>Submit</h5>
-                    </button>
+                    </motion.button>
                 </div>
         </div>
     )

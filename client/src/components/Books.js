@@ -3,10 +3,10 @@ import BookGrid from './BookGrid';
 
 function Books() {
     return (
-        <React.Fragment>
+        <div className='main'>
             < BookGrid />
-        </React.Fragment>
-       
+        </div>
+            
     )
 }
 

@@ -30,16 +30,16 @@ function MyBooks() {
               <section className="my-books">
                   <div className="my-book-list">
                       {books.map(book => (
-                          <motion.div className="row book-item" whileHover={{ scale:1.1 }} whileTap={{ scale: 0.9 }}>
-                              <Link to="/books">
-                                <div className="col-9 book-item-text">
-                                    <h2>{book.Title}</h2>
-                                    <p>{book.Author}</p>
-                                </div>
-                                <button className="col-3 book-item-button">
-                                    <h3>GO</h3>
-                                </button>
-                              </Link>
+                          <motion.div className="row book-item" whileHover={{ scale:1.05 }} whileTap={{ scale: 0.9 }}>
+                              <div className="col-9 book-item-text">
+                                  <h2>{book.Title}</h2>
+                                  <p>{book.Author}</p>
+                              </div>
+                              <button className="col-3 book-item-button">
+                                  <Link to="/books" className='nav-link'>
+                                  <h4>GO</h4>
+                                  </Link>
+                              </button>
                           </motion.div>
                         ))}
                   </div>

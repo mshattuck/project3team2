@@ -1,5 +1,12 @@
 /* My Books */
 
+.nav-link {
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+}
+
 .my-books {
     padding: 2rem 1.5rem 1rem 1rem;
     border-radius: .5rem;
@@ -37,7 +44,10 @@
     color: #2A3950;
 }
 
-.book-item-button{
+.book-item-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 4rem;
     border-style: none;
     background-color: #355C7D;
