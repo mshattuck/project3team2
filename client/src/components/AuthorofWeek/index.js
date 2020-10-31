@@ -1,44 +1,38 @@
 import React, { useState, useEffect} from "react";
 import { getBookofWeek } from "../../api/user";
-import {useStoreContext} from "../../util/GlobalState";
 import './style.css';
-
   
 
 function AuthorofWeek() {
     console.log('authorofweek');
-    const [store] = useStoreContext();
     const [bookofWeek, setBookofWeek] = useState({})
 
     useEffect(() => {
-        console.log('store: ', store);
-
-        getBookofWeek(store)
+        getBookofWeek()
         .then(res => {
-            console.log('res: ', res);
+            console.log('a of w res: ', res);
             return setBookofWeek(res.data);
         })
         .catch(err => console.log(err));
-    }, [store.user]);
+    }, []);
 
     return (
             <React.Fragment>
-                <div class='col d-flex justify-content-left title'>
+                <div className='col d-flex justify-content-left title'>
                     <h2>Author of the week</h2>
                 </div>
-                <section class="AofW">
-                    <div class='row d-flex justify-content-between align-items-center'> 
-                        <div class='col'>
-                            <div class='container-fluid author-info'>
-                                <h1 class='author-name'>Anthony Doerr</h1>
-                                <p class='AofW-text'>Winning book</p>
-                                <p class='AofW-text'>Publication year</p>
-                                <p class='AofW-text'>Award Year</p>
+                <section className="AofW">
+                    <div className='row d-flex justify-content-between align-items-center'> 
+                        <div className='col'>
+                            <div className='container-fluid author-info'>
+                                <h1 className='author-name'>{bookofWeek.Author}</h1>
+                                <p className='AofW-text'>Book: {bookofWeek.Title}</p>
+                                <p className='AofW-text'>Award Year: {bookofWeek.Award_Year}</p>
                             </div>
                         </div>
-                        <div class='col-4'>
-                            <div class='container-fluid author-image'>
-                                <img class='img-fluid' src='book-covers/all-the-light-we-cannot-see.png' alt='book cover' />
+                        <div className='col-4'>
+                            <div className='container-fluid author-image'>
+                                <img className='img-fluid' src={bookofWeek.Image} alt='book cover' />
                             </div>
                         </div>
                     </div>

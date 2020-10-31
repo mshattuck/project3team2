@@ -1,6 +1,5 @@
 import React, { useState, useEffect} from 'react';
 import { getAllBooks } from "../../api/user";
-import {useStoreContext} from "../../util/GlobalState";
 import { motion } from "framer-motion"
 import './style.css';
 

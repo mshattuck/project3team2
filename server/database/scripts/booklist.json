@@ -5,7 +5,7 @@
 		"Author": "Colson Whitehead",
 		"Award_Year": "2020",
 		"Fiction": "Y",
-		"URL to cover image": "https://www.pulitzer.org/cms/sites/default/files/content/9780385537070.jpeg",
+		"Image": "book-covers/the-nickel-boys.png",
 		"users": ["5f945e48b143f8371409b5a0", "5f945e48b143f8371409b5a1", "5f945e48b143f8371409b5a2", "5f945e48b143f8371409b5a3", "5f945e48b143f8371409b5a4"]
 	},
 	{
@@ -14,7 +14,7 @@
 		"Author": "Richard Powers",
 		"Award_Year": "2019",
 		"Fiction": "Y",
-		"URL to cover image": "https://www.pulitzer.org/cms/sites/default/files/content/9780393356687_300.jpeg",
+		"Image": "book-covers/the-overstory.png",
 		"users": ["5f95f65dddcc6f47305bd1a8"]
 	},
 	{
@@ -23,7 +23,7 @@
 		"Author": "Andrew Sean Greer",
 		"Award_Year": "2018",
 		"Fiction": "Y",
-		"URL to cover image": "https://www.pulitzer.org/cms/sites/default/files/content/31933085.jpg",
+		"Image": "book-covers/less.png",
 		"users":["5f95f65dddcc6f47305bd1a9"]
 	},
 	{
@@ -32,7 +32,7 @@
 		"Author": "Colson Whitehead",
 		"Award_Year": "2017",
 		"Fiction": "Y",
-		"URL to cover image": "https://www.pulitzer.org/cms/sites/default/files/content/whitehead-cover.jpg",
+		"Image": "book-covers/the-underground-railroad.png",
 		"users":["5f95f65dddcc6f47305bd1aa"]
 	},
 	{
@@ -41,7 +41,7 @@
 		"Author": "Viet Thanh Nguyen",
 		"Award_Year": "2016",
 		"Fiction": "Y",
-		"URL to cover image": "https://www.pulitzer.org/cms/sites/default/files/content/2016/thesympathizercover200.jpg"
+		"Image": "book-covers/the-sympathizer.png"
 	},
 	{
 		"Id": "6",
@@ -49,7 +49,7 @@
 		"Author": "Anthony Doerr",
 		"Award_Year": "2015",
 		"Fiction": "Y",
-		"URL to cover image": "https://www.pulitzer.org/cms/sites/default/files/content/allthelight200.jpg"
+		"Image": "book-covers/all-the-light-we-cannot-see.png"
 	},
 	{
 		"Id": "7",
@@ -57,7 +57,7 @@
 		"Author": "Donna Tartt",
 		"Award_Year": "2014",
 		"Fiction": "Y",
-		"URL to cover image": "https://www.pulitzer.org/cms/sites/default/files/content/the_goldfinch_by_donna_tart.png"
+		"Image": "book-covers/the-goldfinch.png"
 	},
 	{
 		"Id": "8",
@@ -65,7 +65,7 @@
 		"Author": "Adam Johnson",
 		"Award_Year": "2013",
 		"Fiction": "Y",
-		"URL to cover image": "https://www.pulitzer.org/cms/sites/default/files/content/orphanmastercover.jpg"
+		"Image": "the-orphan-masters-son.png"
 	},
 	{
 		"Id": "9",
@@ -73,7 +73,7 @@
 		"Author": "Jennifer Egan",
 		"Award_Year": "2011",
 		"Fiction": "Y",
-		"URL to cover image": "https://www.pulitzer.org/cms/sites/default/files/content/egancover2011.jpg",
+		"Image": "book-covers/a-visit-from-the-goon-squad.png",
 		"users":["5f95f65dddcc6f47305bd1a7","5f95f65dddcc6f47305bd1a9","5f95f65dddcc6f47305bd1ab"]
 	},
 	{
@@ -82,7 +82,7 @@
 		"Author": "Paul Harding",
 		"Award_Year": "2010",
 		"Fiction": "Y",
-		"URL to cover image": "https://www.pulitzer.org/cms/sites/default/files/archives/works_images/tinkers.jpg"
+		"Image": "book-covers/tinkers.png"
 	},
 	{
 		"Id": "11",
@@ -90,6 +90,6 @@
 		"Author": "Elizabeth Strout",
 		"Award_Year": "2009",
 		"Fiction": "Y",
-		"URL to cover image": "https://www.pulitzer.org/cms/sites/default/files/content/olivekitteridge.jpg"
+		"Image": "book-covers/olive-kitteridge.png"
 	}
 ]

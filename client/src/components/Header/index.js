@@ -41,7 +41,7 @@ function Header() {
     return (
         <header className=".navbar">
             {store.loggedIn ? (
-                 <Link to="#" className="btn btn-link text-secondary" onClick={logout}>
+                 <Link to="/login" className="btn btn-link text-secondary" onClick={logout}>
                  <span className="text-secondary">logout</span></Link>
 
             ): (

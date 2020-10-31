@@ -13,7 +13,10 @@ const bookSchema = new Schema ({
     },
     users: [
         {type: mongoose.Schema.Types.ObjectId,ref:'User'}
-    ]
+    ],
+    Image: {
+        type: String
+    } 
 });
 
 const Book = mongoose.model("Book", bookSchema);

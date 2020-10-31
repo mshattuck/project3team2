@@ -14,14 +14,16 @@ module.exports = {
         const {
             Title,
             Author,
-            Award_Year
+            Award_Year,
+            Image
         } = book;
-        console.log('entering findAll')
+        console.log('entering findAll');
         await db.BookofWeek.deleteOne({});
         await db.BookofWeek.create({
             Title,
             Author,
-            Award_Year
+            Award_Year,
+            Image
         })        
     }
 }

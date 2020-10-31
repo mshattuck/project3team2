@@ -11,6 +11,9 @@ const bookofWeekSchema = new Schema ({
     Award_Year: {
         type: Number
     },
+    Image: {
+        type: String
+    } 
 });
 
 const BookofWeek = mongoose.model("BookofWeek", bookofWeekSchema);

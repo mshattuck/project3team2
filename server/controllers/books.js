@@ -20,13 +20,14 @@ module.exports = {
       try {
         const user = req.params;
         const id = user.id
-        const {title, author, award_year} = req.body;
+        const {title, author, award_year, Image} = req.body;
         const userById = await User.findById(id);
         const book = await Book.create({
             title,
             authors,
             award_year,
-            user: userById
+            user: userById,
+            Image
         });
         await book.save();
         res.send()
