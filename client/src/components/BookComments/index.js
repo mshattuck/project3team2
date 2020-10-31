@@ -6,13 +6,22 @@ function BookComments() {
         <div>
                 <section className='comments'>
                     <div className='comment'>
-                        <p className='comment-text'>This is a comment about the book. I really liked this book! it was a great book. read this book.</p>
+                        <p className='comment-text'>Wow! This book blew me away! Has anyone read other works from this author?</p>
+                    </div>
+                    <div className='writer'>
+                        <p className='writer-name'>Sandy Shells</p>
                     </div>
                     <div className='comment'>
-                        <p className='comment-text'>This is a comment about the book. I really liked this book! it was a great book. read this book.</p>
+                        <p className='comment-text'>I adored this book and I'm recommending it to my students.</p>
+                    </div>
+                    <div className='writer'>
+                        <p className='writer-name'>Marty James</p>
                     </div>
                     <div className='comment'>
-                        <p className='comment-text'>This is a comment about the book. I really liked this book! it was a great book. read this book.</p>
+                        <p className='comment-text'>I'm only halfway through but I can't put this book down! I almost downloaded the audio book so I could finish it at work but I don't want to accidentally miss something!</p>
+                    </div>
+                    <div className='writer'>
+                        <p className='writer-name'>Ben Powell</p>
                     </div>
                 </section>
                 <div className='comment-input-area'>
