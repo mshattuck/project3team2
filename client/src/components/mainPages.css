@@ -4,7 +4,7 @@ body {
 }
 
 .AofW, .my-books, .add-book-area, .bookStack {
-    margin: 1rem;
+    margin: 1rem .5rem 1rem .5rem;
 }
 
 .bookStack {
