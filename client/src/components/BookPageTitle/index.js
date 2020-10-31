@@ -9,14 +9,14 @@ function BookPageTitle() {
                     <div className='row d-flex justify-content-between align-items-center'> 
                         <div className='col'>
                             <div className='container-fluid book-info'>
-                                <h1 className='book-name'>All the Light we Cannot See</h1>
-                                <p className='book-text'>Author: Anthony Doerr</p>
-                                <p className='book-text'>Award Year: 2015</p>
+                                <h1 className='book-name'>Less</h1>
+                                <p className='book-text'>Author: Andrew Greer</p>
+                                <p className='book-text'>Award Year: 2018</p>
                             </div>
                         </div>
                         <div className='col-4'>
                             <div className='container-fluid book-image'>
-                                <img className='img-fluid' src='book-covers/all-the-light-we-cannot-see.png' alt='book cover' />
+                                <img className='img-fluid' src='book-covers/less.png' alt='book cover' />
                             </div>
                         </div>
                     </div>
